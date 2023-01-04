@@ -1,0 +1,223 @@
+                                                           DAY 1 TASK
+
+1.  Difference between HTTP 1.1 and HTTP 2 :
+
+   HTTP: 
+               HyperText Transfer Protocol. It is a Client - Server communication. The user sends request to the server and the server sends response to user.
+
+      1. Multiplexing:
+
+                    HTTP 1.1: HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. 
+                                                                   
+                    HTTP 2:  Single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+
+      2. Server push:
+
+                   HTTP 1.1: The server only serves content to a client device if the client asks for it.
+
+                   HTTP 2:   Allows a server to PUSH content to a client before the client asks for it.
+
+      3. Header Compression:
+
+                  HTTP 1.1: It compresses data by itself.
+
+                  HTTP 2: It uses HPACK for data compression.
+
+      4. Format:
+
+                HTTP 1.1: It works on Textual  format.
+
+                HTTP 2:  It works on  Binary  format.
+__________________________________________________________________________________
+
+2. Objects and its Internal representation:
+
+    1.Objects are variables. But objects can contain many values.
+
+    2.Object values are written as name : value pairs (name and value seperated by colon).
+
+    3.Object is a collection of named values (properties).
+
+    4.All Javascript values except primitives are objects.
+
+    5.Objects are MUTABLE. (can be changed) They are addressed by reference, not by value.
+
+    6.JavaScript objects are containers for named values, called properties and methods.
+
+Internal Representation:
+
+    1.name : value pairs in curly braces { } :
+                     Ex: const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+    2. Empty Javascript object and adds properties :
+                     Ex: const person = {};
+                           person.firstName = "John";
+                           person.age = 50;
+
+    3. Using Javascript keyword new:
+                   Ex: const person = new Object();
+                           person.firstName = "John";
+                           person.age = 50;
+
+    4. Undefined:
+                  Ex: person.myName;  (not null)
+
+    5. Using bracket notation [array]:
+                 Ex: person["age"]= 50;
+                     Property name can be a string or anything that can be converted to a string including empty string.
+
+    6. Using Object.create() method:
+                   Ex: var Animal = {
+                              type = 'Carnivore',
+                    displayType = function ();
+                   }
+                        var animal1 = Object.create(Animal);
+                        animal1.displayType();
+                       o/p: Carnivore
+
+    7.Using Constructor:
+                       Constructor is nothing but function with the help of  new  keyword.
+                            Ex: function Vehicle(name,make){
+                                        this.name = name;
+                                        this.make = make;
+                                       }
+                                   let car1 = newVehicle('Fiesta', 'Ford');
+                                   console.log(car1.name);  o/p: Fiesta.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
